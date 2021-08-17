@@ -1,0 +1,157 @@
+/* Default styles being applied to website */
+/* Order of CSS reorganized according to order of occurence in HTML */
+
+* {
+    box-sizing: border-box;
+    transition-duration: 0.15s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100px;
+   
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+    justify-content: space-between;
+}
+
+header > form {
+    padding: 0px 20px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px 20px;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: grid;
+    min-height: 360px;
+}
+
+main > div {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+main p {
+    text-align: center;
+}
+
+#content-section {
+    padding: 20px;
+    min-height: 40vh;
+}
+
+#content-section p {
+    text-align: left;
+}
+
+#flexcontainer {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#check-current-temp {
+    height: 4em;
+    width: 400px;
+    color: white;
+    margin: 15px auto;
+    border-radius: 1em;
+    background-color: steelblue;
+}
+
+#check-current-temp:hover{
+    background-color: rgb(58, 110, 153);
+}
+
+#check-current-temp:active{
+    box-shadow: 0 5px gray;
+    transform: translateY(3px);
+    background-color: rgb(58, 110, 153);
+}
+
+#current-weather {
+    background-color: #eee;
+}
+
+#weather-display {
+    font-size: 4em;
+    color: maroon;
+}
+
+#current-mood {
+    height: 90vh;
+    background-color: #f2ac00;
+}
+
+footer {
+    display: flex;
+    color: white;
+    margin: 20px auto;
+    align-items: center;
+    background-color: black;
+}
+
+footer p {
+    margin-left: 20px;
+}
+
+
+/* Media Query and CSS Styles For Mobile Devices */
+/* Syling CSS to be used when viewport width is less then 840px */
+
+@media screen and (max-width: 840px) {
+
+    header {
+        display: grid;
+        padding: 20px 0;
+        justify-content: center;
+    }
+
+    header > form {
+        justify-self: center;
+    }
+
+    #flexcontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #check-current-temp {
+        margin: 0;
+        width: 100%;
+        background-color: maroon;
+    }
+
+    #check-current-temp:hover{
+        background-color: rgb(99, 2, 2);
+    }
+    
+    #check-current-temp:active{
+        transform: translateY(3px);
+        box-shadow: 0 5px slategray;
+        background-color: rgb(99, 2, 2);
+    }
+
+    #current-mood {
+        height: 55vh;
+        background-color: #f2ac00;
+    }
+
+}
+

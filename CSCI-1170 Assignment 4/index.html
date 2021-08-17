@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Start of HTML Document. -->
+<html lang="en">
+    <!-- Head of Website -->
+    <head>
+        <!-- Title -->
+        <title>The Force Weather</title>
+        <!-- Metadata Information -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- Links to CSS files -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <!-- Body of website -->
+    <body>
+        <!-- Top header/nav area -->
+        <header>
+            <h1>The Force: Weather Info</h1>
+            <form action="#" method="GET">
+                <input type="text" name="search-keywords" id="search-input">
+                <input type="submit" value="Search">
+            </form>
+        </header>
+        <!-- Main section of body -->
+        <main>
+            <!-- Section with majority of text content -->
+            <div id="content-section">
+                <h2>What is this web page all about?</h2>
+                <p>Well, this web page shows a random weather value and based on the current temperature value somewhere in the universe, it will pick one of five images to show below the temperature as the "mood" image. The temperature could be anywhere between freezing to super hot, and that's what each image "mood" will try to visualize based on the temperature value.</p>
+                <div id="flexcontainer">
+                    <p>The rest of this content section is just filler text. This text really does not mean anything with respect to the content of the website, but it is important to retain the text because it gives a good estimate of the layout aspects of the web page. In some time, all this meaningful English language text will turn into something in Latin at which point you can stop paying attention to it. See? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos magnam nulla harum iusto officiis, quam ad quod libero? Ab quisquam pariatur praesentium iusto ullam quaerat obcaecati molestiae ratione accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                    <p>Exercitationem eos magnam nulla harum iusto officiis, quam ad quod libero? Ab quisquam pariatur praesentium iusto ullam quaerat obcaecati molestiae ratione accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos magnam nulla harum iusto officiis, quam ad quod libero? Ab quisquam pariatur praesentium iusto ullam quaerat obcaecati molestiae ratione accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos magnam nulla harum iusto officiis, quam ad quod libero? Ab quisquam pariatur praesentium iusto ullam quaerat obcaecati molestiae ratione accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Exercitationem eos magnam nulla harum iusto officiis, quam ad quod libero? Ab quisquam pariatur praesentium iusto ullam quaerat obcaecati molestiae ratione accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos magnam nulla harum iusto officiis, quam ad quod libero? Ab quisquam pariatur praesentium iusto ullam quaerat obcaecati molestiae ratione accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos magnam nulla harum iusto officiis, quam ad quod libero? Ab quisquam pariatur praesentium iusto ullam quaerat obcaecati molestiae ratione accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing.</>
+                </div>
+            </div>
+            <!-- Button controlling weather information -->
+            <button id="check-current-temp">Click here to check current temperature</button>
+            <!-- Weather information section controlled by JS -->
+            <div id="current-weather">
+                <p>Current temperature is:</p>
+                <p id="weather-display"><span id="current-temp">0</span> &deg;<small>C</small></p>
+            </div>
+            <!-- Section displaying corresponding images also controlled by JS -->
+            <div id="current-mood"></div>
+        </main>
+        <!-- Footer of body -->
+        <footer>
+            <p>&copy; The Force. "Breathe, reach out, what do you see?"</p>
+        </footer>
+        <!-- Link to javascript document -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
